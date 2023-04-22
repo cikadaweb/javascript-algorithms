@@ -16,12 +16,13 @@ function getRandomBetween(min, max) {
 }
 
 function quickSort(mas) {
+  // если массив меньше 2 его не нужно сортировать
   if (mas.length < 2) {
     return mas;
   }
 
+  // берем контрольный элемент
   const index = Math.floor(Math.random() * mas.length);
-
   const currentItem = mas[index];
 
   const more = [];
